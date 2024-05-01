@@ -1,0 +1,37 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ypf.testbinding.controller.mainView" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <HBox width="100%" id="hbox0">
+                <items>
+                <VBox width="100%" direction="Column" id="vbox0">
+                <items>
+                    <VBox width="100%" direction="Column" id="vbox0_1714338031450">
+                        <items>
+                            <Label text="Nombre" width="100%" id="label0"/>
+                            <Input xmlns="sap.m" id="Nombre" value="{/FirstName}"/>
+                        </items>
+                <items>
+                    <Label text="Apellido" width="100%" id="label0_1714338219832"/>
+                    <Input xmlns="sap.m" id="Apellido" value="{/LastName}"/>
+                </items>
+                                        
+                    </VBox>
+                </items>
+            </VBox>
+                </items>
+            </HBox>
+            <VBox width="100%" direction="Column" id="VboxApellido">
+                <items>
+                    <Label text="Apellido" width="100%" id="label0_1714338219832"/>
+                    <Input xmlns="sap.m" id="Apellido" value="{/LastName}"/>
+                </items>
+            </VBox>
+            <VBox width="100%" direction="Column" id="vbox1">
+                <items>
+                    <Label text="Nombre completo" width="100%" id="label1"/>
+                    <Input xmlns="sap.m" id="FullName" editable="false" value="{/FirstName} {/LastName}"/>
+                </items>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
